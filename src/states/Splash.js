@@ -60,7 +60,6 @@ Splash.prototype = {
     game.state.add("GameMenu",GameMenu);
     game.state.add("Game",Game);
     game.state.add("GameOver",GameOver);
-    game.state.add("Credits",Credits);
     game.state.add("Options",Options);
   },
 
