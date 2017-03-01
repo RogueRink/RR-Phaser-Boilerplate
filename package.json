@@ -1,7 +1,7 @@
 {
-  "name": "testbed",
-  "version": "0.0.1",
-  "description": "RougeRinks development testbed",
+  "name": "RR-Phaser-Boilerplate",
+  "version": "1.0.0",
+  "description": "RougeRinks development Boilerplate",
   "main": "index.js",
   "dependencies": {
     "gulp-uglify": "^2.0.1"
