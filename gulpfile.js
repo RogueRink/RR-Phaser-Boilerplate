@@ -17,11 +17,19 @@ function errorLog(error){
 
 //scripts task
 //Uglifies
+gulp.task('html', function(){
+  gulp.src('src/index.html')
+    .pipe(plumber())
+    .pipe(gulp.dest('prod/'));
+});
+
+//scripts task
+//Uglifies
 gulp.task('scripts', function(){
   gulp.src('src/states/*.js')
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(gulp.dest('build/minjs/'));
+    .pipe(gulp.dest('prod/minjs/'));
 });
 
 //styles task
@@ -32,7 +40,7 @@ gulp.task('styles', function(){
     .pipe(stylus({
         use:[typographic(), nib()]
     }))
-    .pipe(gulp.dest('build/style/'));
+    .pipe(gulp.dest('prod/style/'));
 });
 
 //watch task
@@ -43,4 +51,4 @@ gulp.task('watch', function(){
 
 });
 
-gulp.task('default', ['scripts','styles','watch']);
+gulp.task('default', ['html','scripts','styles','watch']);
