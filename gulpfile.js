@@ -37,7 +37,7 @@ gulp.task('styles', function(){
 
 //watch task
 //watching for changes
-gulp.task('watches', function(){
+gulp.task('watch', function(){
   gulp.watch('src/states/*.js',['scripts']);
   gulp.watch('src/assets/style/*.styl',['styles']);
 
