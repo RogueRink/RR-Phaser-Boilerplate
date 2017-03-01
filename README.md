@@ -1,5 +1,7 @@
 # THE RR-Phaser-Boilerplate
 
+This boilerplate template is licensed under the MIT license. And we encourage anyone developing with phaser to utalize it.
+
 This Boilerplate is a starting template that we use for all of our projects here at RogueRink.
 The assets used in this boilerplate are acknowldged at the bottom of the page.
 Its more complext than your usual boilerplate, but should be a strong starting point. 
