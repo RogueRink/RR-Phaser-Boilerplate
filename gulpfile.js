@@ -56,7 +56,7 @@ gulp.task('game', function(){
 });
 
 //add images / fonts / music
-// NOTE : If images are not jpg
+// NOTE : If images are not jpg or png
 //        If Audo is not mp3
 //        If fonts are not OTF or TTF
 // You will need to modify this task and
@@ -71,6 +71,9 @@ gulp.task('addassets', function(){
   gulp.src('src/assets/images/*.jpg')
     .pipe(plumber())
     .pipe(gulp.dest('prod/assets/images/'));
+    gulp.src('src/assets/images/*.png')
+      .pipe(plumber())
+      .pipe(gulp.dest('prod/assets/images/'));
   gulp.src('src/assets/music/*.mp3')
     .pipe(plumber())
     .pipe(gulp.dest('prod/assets/music/'));
@@ -147,7 +150,8 @@ gulp.task('watch-game', function(){
   gulp.watch('src/assets/font/*.ttf',['addassets']);
   gulp.watch('src/assets/font/*.otf',['addassets']);
   gulp.watch('src/assets/images/*.png',['addassets']);
-  gulp.watch('src/assets/music/*.jpg',['addassets']);
+  gulp.watch('src/assets/images/*.jpg',['addassets']);
+  gulp.watch('src/assets/music/*.mp3',['addassets']);
   gulp.watch('src/main.js',['game']);
   gulp.watch('src/game.html',['game']);
 });
