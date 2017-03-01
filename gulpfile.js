@@ -19,7 +19,7 @@ function errorLog(error){
 
 gulp.task('clean',function(){
     return gulp.src('prod',{force: true})
-        .pipe(gulp.dest('prod'));
+      .pipe(clean());
 });
 
 
