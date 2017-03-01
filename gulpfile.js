@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
-    uglify = require('gulp-stylus'),
+    stylus = require('gulp-stylus'),
     typographic = require('typographic'),
     nib = require('nib'),
     plumber = require('gulp-plumber');
@@ -43,4 +43,4 @@ gulp.task('watch', function(){
 
 });
 
-gulp.task('default', ['scripts']);
+gulp.task('default', ['scripts','styles','watch']);
