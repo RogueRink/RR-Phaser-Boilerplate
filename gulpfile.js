@@ -20,7 +20,7 @@ function errorLog(error){
 gulp.task('html', function(){
   gulp.src('src/index.html')
     .pipe(plumber())
-    .pipe(gulp.dest('prod/'));
+    .pipe(gulp.dest('prod/game.html'));
 });
 
 //scripts task
