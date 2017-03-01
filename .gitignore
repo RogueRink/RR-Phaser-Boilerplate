@@ -162,3 +162,6 @@ $RECYCLE.BIN/
 *.lnk
 
 bower_components
+
+# Production Folder
+prod/
