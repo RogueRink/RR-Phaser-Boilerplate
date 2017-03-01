@@ -17,9 +17,8 @@ function errorLog(error){
     this.emit('end');
 }
 
-gulp.task('clean',function{
-    return gulp.src('prod')
-        .pipe(clean({force: true}))
+gulp.task('clean',function(){
+    return gulp.src('prod',{force: true})
         .pipe(gulp.dest('prod'));
 });
 
