@@ -1,26 +1,40 @@
 var gulp = require('gulp'),
+    clean = require('gulp-clean'),
     uglify = require('gulp-uglify'),
     stylus = require('gulp-stylus'),
     typographic = require('typographic'),
     nib = require('nib'),
     plumber = require('gulp-plumber');
 
+
+
+    /*uising errorLog
+      You can put -->     .on('error',errorLog)
+      Or you can use -->  .pipe(plumber())
+    */
 function errorLog(error){
     console.error.bind(error);
     this.emit('end');
 }
 
-/*uising errorLog
-  You can put -->     .on('error',errorLog)
-  Or you can use -->  .pipe(plumber())
-*/
+gulp.task('clean',function{
+    return gulp.src('prod')
+        .pipe(clean({force: true}))
+        .pipe(gulp.dest('prod'));
+});
 
-//scripts task
-//Uglifies
-gulp.task('html', function(){
+
+//adds html files to the game
+gulp.task('htmli', function(){
   gulp.src('src/index.html')
     .pipe(plumber())
-    .pipe(gulp.dest('prod/game.html'));
+    .pipe(gulp.dest('prod/'));
+});
+
+gulp.task('htmlg', function(){
+  gulp.src('src/game.html')
+    .pipe(plumber())
+    .pipe(gulp.dest('prod/'));
 });
 
 //scripts task
