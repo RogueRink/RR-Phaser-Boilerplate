@@ -18,6 +18,7 @@ function errorLog(error){
 }
 
 // Deletes prod folder so we can start from new
+// NOTE: ONLY USE WHEN NEEDED
 gulp.task('clean',function(){
     return gulp.src('prod',{force: true})
       .pipe(clean());
@@ -170,4 +171,4 @@ gulp.task('watch-styles', function(){
 gulp.task('sc', ['libmove','vendormove']);
 gulp.task('watch', ['watch-game','watch-landing','watch-styles']);
 
-gulp.task('default', ['clean','landing','addgame','styles','watch']);
+gulp.task('default', ['landing','addgame','styles','watch']);
