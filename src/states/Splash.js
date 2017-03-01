@@ -6,10 +6,10 @@ Splash.prototype = {
     game.load.script('style', 'lib/style.js');
     game.load.script('mixins', 'lib/mixins.js');
     game.load.script('WebFont', 'vendor/webfontloader.js');
-    game.load.script('gamemenu','states/GameMenu.js');
-    game.load.script('game', 'states/Game.js');
-    game.load.script('gameover','states/GameOver.js');
-    game.load.script('options', 'states/Options.js');
+    game.load.script('gamemenu','minjs/GameMenu.js');
+    game.load.script('game', 'minjs/Game.js');
+    game.load.script('gameover','minjs/GameOver.js');
+    game.load.script('options', 'minjs/Options.js');
   },
 
   loadBgm: function () {

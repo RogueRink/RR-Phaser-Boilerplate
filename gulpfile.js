@@ -169,6 +169,7 @@ gulp.task('watch-styles', function(){
 
 //sc --> Static change will modify all files from lib and vendor directories
 gulp.task('sc', ['libmove','vendormove']);
+
 gulp.task('watch', ['watch-game','watch-landing','watch-styles']);
 
 gulp.task('default', ['landing','addgame','styles','watch']);
