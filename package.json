@@ -1,0 +1,31 @@
+{
+  "name": "testbed",
+  "version": "0.0.1",
+  "description": "RougeRinks development testbed",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-uglify": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.1",
+    "nib": "^1.1.2",
+    "typographic": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogueRink/RR-Phaser-Boilerplate.git"
+  },
+  "author": "Dylan Lang, RogueRink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogueRink/RR-Phaser-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/RogueRink/RR-Phaser-Boilerplate#readme"
+}
